@@ -1,0 +1,10 @@
+-- Added teachers table definition for admin CRUD.
+CREATE TABLE IF NOT EXISTS teachers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  teacher_id VARCHAR(50) NOT NULL UNIQUE,
+  last_name VARCHAR(80) NOT NULL,
+  first_name VARCHAR(80) NOT NULL,
+  email VARCHAR(120) DEFAULT NULL,
+  module VARCHAR(120) DEFAULT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

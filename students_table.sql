@@ -1,0 +1,12 @@
+-- Added students table definition used by admin CRUD.
+CREATE TABLE IF NOT EXISTS students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  student_id VARCHAR(50) NOT NULL UNIQUE,
+  last_name VARCHAR(80) NOT NULL,
+  first_name VARCHAR(80) NOT NULL,
+  email VARCHAR(120) DEFAULT NULL,
+  module VARCHAR(120) DEFAULT NULL,
+  section VARCHAR(50) DEFAULT NULL,
+  group_id VARCHAR(50) DEFAULT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

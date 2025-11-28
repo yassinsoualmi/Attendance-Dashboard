@@ -1,0 +1,1 @@
+NOTE: Only students carry section + group; teachers are associated only with modules and sessions they open. Sessions store module/section/group to filter students, but teacher records do not keep section/group fields.
